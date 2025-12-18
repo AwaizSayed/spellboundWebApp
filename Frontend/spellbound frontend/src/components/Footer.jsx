@@ -14,7 +14,7 @@ function Footer() {
           </div>
 
           <div className="row">
-            <div className="col-md-10 mb-3 text-left">
+            <div className="col-md-8 mb-3 text-left">
               <h5>Quick Links</h5>
               <ul className="list-unstyled">
                 <li>
@@ -45,7 +45,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="col-md-2 mb-3 text-start">
+            <div className="col-md-4 mb-3 text-start">
               <h5>Contacts</h5>
               <ul className="list-unstyled ">
                 <li>
@@ -62,7 +62,8 @@ function Footer() {
                       href="mailto:info@spellbound.com"
                       className="text-decoration-none text-white"
                     >
-                      <i className="bi bi-envelope"></i> &nbsp;info@spellbound.com
+                      <i className="bi bi-envelope"></i>{" "}
+                      &nbsp;info@spellbound.com
                     </a>
                   </address>
                 </li>
