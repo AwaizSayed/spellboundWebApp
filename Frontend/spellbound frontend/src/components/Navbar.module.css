@@ -1,0 +1,7 @@
+:global(.dropdown-item).customdropdownitem {
+  color: white;
+}
+
+:global(.dropdown-item).customdropdownitem:hover {
+  color: black;
+}
