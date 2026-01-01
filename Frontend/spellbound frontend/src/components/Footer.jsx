@@ -1,6 +1,7 @@
 import FooterCSS from "./Footer.module.css";
 import "./Footer.module.css";
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className=" mb-4 text-center ">
-              <img src={Logo} width="180" height="70" style={{}} />
+              <img src={Logo} width="220" height="100" style={{}} />
             </div>
           </div>
 
@@ -18,21 +19,21 @@ function Footer() {
               <h5>Quick Links</h5>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#" className="text-decoration-none text-white">
+                  <Link className="nav-link" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-decoration-none text-white">
+                  <Link className="nav-link" to="/Projects">
                     Our Projects
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-decoration-none text-white">
+                  <Link className="nav-link" to="/Products">
                     Products
-                  </a>
+                  </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="#" className="text-decoration-none text-white">
                     About us
                   </a>
@@ -41,7 +42,7 @@ function Footer() {
                   <a href="#" className="text-decoration-none text-white">
                     Contact us
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 

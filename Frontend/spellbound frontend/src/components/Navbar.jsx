@@ -11,9 +11,9 @@ function Navbar() {
         style={{ backgroundColor: "#36454F" }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={Logo} width="160" height="60" style={{}} />
-          </a>
+          <Link className="nav-link" to="/">
+            <img src={Logo} width="195" height="85" style={{}} />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -51,72 +51,21 @@ function Navbar() {
                 </Link>
               </li>
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link  dropdown-toggle text-white"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <label style={{ fontWeight: "normal", color: "#ffff" }}>
-                    Products
-                  </label>
-                </a>
-
-                <ul
-                  className="dropdown-menu"
-                  style={{ backgroundColor: "#36454F", border: "none" }}
-                >
-                  <li>
-                    <a
-                      className={`dropdown-item ${styles.customdropdownitem}`}
-                      href="#"
-                    >
-                      {/* <label style={{ fontWeight: "normal", color: "#ffff",  }}> */}
-                      Sofa
-                      {/* </label> */}
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      className={`dropdown-item ${styles.customdropdownitem}`}
-                      href="#"
-                    >
-                      {/* <label style={{ fontWeight: "normal", color: "#ffff" }}> */}
-                      Curtain
-                      {/* </label> */}
-                    </a>
-                  </li>
-                  <li>{/* <hr className="dropdown-divider" /> */}</li>
-                  <li>
-                    <a
-                      className={`dropdown-item ${styles.customdropdownitem}`}
-                      href="#"
-                    >
-                      {/* <label style={{ fontWeight: "normal", color: "#ffff" }}> */}
-                      Something else here
-                      {/* </label> */}
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                   <label style={{ fontWeight: "normal", color: "#ffff" }}>
                     About us
                   </label>
                 </a>
-              </li>
+              </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="#">
                   <label style={{ fontWeight: "normal", color: "#ffff" }}>
                     contact us
                   </label>
                 </a>
-              </li>
+              </li> */}
 
               {/* <li className="nav-item">
                 <a className="nav-link disabled" aria-disabled="true">
@@ -238,6 +187,63 @@ function DepricatedNavbar() {
           </form> */}
         </div>
       </nav>
+    </>
+  );
+}
+
+function RemovedNavbarFeature() {
+  return (
+    <>
+      <li className="nav-item dropdown">
+        <a
+          className="nav-link  dropdown-toggle text-white"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <label style={{ fontWeight: "normal", color: "#ffff" }}>
+            Products
+          </label>
+        </a>
+
+        <ul
+          className="dropdown-menu"
+          style={{ backgroundColor: "#36454F", border: "none" }}
+        >
+          <li>
+            <a
+              className={`dropdown-item ${styles.customdropdownitem}`}
+              href="#"
+            >
+              {/* <label style={{ fontWeight: "normal", color: "#ffff",  }}> */}
+              Sofa
+              {/* </label> */}
+            </a>
+          </li>
+          <li>
+            <a
+              className={`dropdown-item ${styles.customdropdownitem}`}
+              href="#"
+            >
+              {/* <label style={{ fontWeight: "normal", color: "#ffff" }}> */}
+              Curtain
+              {/* </label> */}
+            </a>
+          </li>
+          <li>{/* <hr className="dropdown-divider" /> */}</li>
+          <li>
+            <a
+              className={`dropdown-item ${styles.customdropdownitem}`}
+              href="#"
+            >
+              {/* <label style={{ fontWeight: "normal", color: "#ffff" }}> */}
+              Something else here
+              {/* </label> */}
+            </a>
+          </li>
+        </ul>
+      </li>
     </>
   );
 }

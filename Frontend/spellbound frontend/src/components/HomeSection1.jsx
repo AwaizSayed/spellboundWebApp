@@ -1,4 +1,7 @@
 import DesktopViewImage from "../assets/images/DesktopViewImage/HomeSection1Image/HallImage.jpeg";
+import DesktopViewImage1 from "../assets/images/DesktopViewImage/HomeSection1Image/HallImage1.jpeg";
+import LivingRoomGrey1 from "../assets/images/DesktopViewImage/Work/LivingRoom/LivingRoomGrey1.png";
+
 import HomeSection1CSS from "./HomeSection1.module.css";
 
 function HomeSection1() {
@@ -51,7 +54,7 @@ function HomeSection1() {
                 backgroundColor: "#00000089",
               }}
             >
-              <h5 className="text-white">Hallway</h5>
+              <h5 className="text-white">Living Room</h5>
               <p className="text-white">
                 Astonishing Finish with wooden Flooring
               </p>
@@ -60,7 +63,7 @@ function HomeSection1() {
 
           <div className="carousel-item" data-bs-interval="2000">
             <img
-              src={DesktopViewImage}
+              src={DesktopViewImage1}
               className="d-block"
               alt="..."
               style={{
@@ -75,7 +78,7 @@ function HomeSection1() {
                 backgroundColor: "#00000089",
               }}
             >
-              <h5 className="text-white">Hallway1</h5>
+              <h5 className="text-white">Living Room</h5>
               <p className="text-white">
                 Astonishing Finish with wooden Flooring
               </p>
@@ -84,7 +87,7 @@ function HomeSection1() {
 
           <div className="carousel-item">
             <img
-              src={DesktopViewImage}
+              src={LivingRoomGrey1}
               className="d-block"
               alt="..."
               style={{
@@ -99,7 +102,7 @@ function HomeSection1() {
                 backgroundColor: "#00000089",
               }}
             >
-              <h5 className="text-white">Hallway2</h5>
+              <h5 className="text-white">Living Room</h5>
               <p className="text-white">
                 Astonishing Finish with wooden Flooring
               </p>
