@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  console.log(styles.customdropdownitem);
+  // console.log(styles.customdropdownitem);
   return (
     <>
       <nav
@@ -51,21 +51,21 @@ function Navbar() {
                 </Link>
               </li>
 
-              {/* <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/#about">
                   <label style={{ fontWeight: "normal", color: "#ffff" }}>
                     About us
                   </label>
-                </a>
-              </li> */}
+                </Link>
+              </li>
 
-              {/* <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li className="nav-item">
+                <Link className="nav-link" to="/#contact">
                   <label style={{ fontWeight: "normal", color: "#ffff" }}>
                     contact us
                   </label>
-                </a>
-              </li> */}
+                </Link>
+              </li>
 
               {/* <li className="nav-item">
                 <a className="nav-link disabled" aria-disabled="true">

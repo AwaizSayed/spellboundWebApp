@@ -33,16 +33,16 @@ function Footer() {
                     Products
                   </Link>
                 </li>
-                {/* <li>
-                  <a href="#" className="text-decoration-none text-white">
+                <li>
+                  <Link className="nav-link" to="/#about">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-decoration-none text-white">
+                  <Link className="nav-link" to="/#contact">
                     Contact us
-                  </a>
-                </li> */}
+                  </Link>
+                </li>
               </ul>
             </div>
 

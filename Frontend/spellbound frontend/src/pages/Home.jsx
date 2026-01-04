@@ -13,14 +13,18 @@ function Home() {
     <>
       <Navbar />
       <HomeSection1 />
-      <AboutUs />
+      <section id="about">
+        <AboutUs />
+      </section>
       <HomeSection2 />
       <HomeSection4 />
       <HomeSection3 />
 
       {/* <HomeSection5 />
       <HomeSection6 /> */}
-      <Footer />
+      <section id="contact">
+        <Footer />
+      </section>
     </>
   );
 }

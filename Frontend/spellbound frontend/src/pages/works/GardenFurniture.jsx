@@ -3,7 +3,11 @@ import GardenFurniture1 from "../../assets/images/DesktopViewImage/Work/GardenFu
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
+import { useState } from "react";
+import ImagePreview from "../../components/ImagePreview";
+
 function GardenFurniture() {
+  const [showPreview1, setShowPreview1] = useState(false);
   return (
     <>
       <Navbar />
@@ -16,7 +20,13 @@ function GardenFurniture() {
             alt="..."
             height={300}
             width={250}
+            onClick={() => setShowPreview1(true)}
           ></img>
+          <ImagePreview
+            image={GardenFurniture1}
+            stateOfImage={showPreview1}
+            setStateOfImage={setShowPreview1}
+          />
         </div>
       </div>
       <Footer />
